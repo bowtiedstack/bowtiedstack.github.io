@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define the main container */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  @apply bg-background md:text-justify;
+}
+
+p {
+  @apply my-4 leading-[1.6rem] text-sm sm:text-base sm:leading-[1.6rem];
+}
+
+a {
+  @apply text-blue-700 underline;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  @apply text-primary font-semibold;
+}
+
+/* Define the page header */
+#header {
+  text-align: center;
+  padding: 50px 0;
+  @apply bg-primary text-white;
+}
+
+#header h1 {
+  font-size: 36px;
+  text-shadow: 1px 1px #000;
+  @apply m-0 px-4;
+}
+
+/* page sections */
+.section {
+  @apply mb-8;
+}
+
+/* Define the social media icons */
+.social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.social a {
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 24px;
+  @apply text-white;
+}
+
+.social a:hover {
+  @apply text-lightGray;
+}
+
+/* Define the page content */
+#content {
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  @apply p-6 sm:p-8 md:p-12 my-0 md:my-4 max-w-3xl bg-white md:rounded-xl;
+}
+
+/* Define the projects section */
+.projects {
+  @apply grid grid-cols-1 xs:grid-cols-2 gap-5 sm:gap-10 mb-10 justify-between;
+}
+
+/* Define the project links */
+.project {
+  padding: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  @apply bg-white max-w-xs mx-auto rounded-lg;
+}
+.project:hover {
+  @apply bg-[#f8f8f8];
+}
+
+.project h3 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  @apply text-primary;
+}
+
+.project p {
+  @apply mb-0;
+}
+
+.projects .project img {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  @apply mb-5 rounded-lg;
+}
