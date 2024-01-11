@@ -1,4 +1,4 @@
-# bowtiedfullstack.github.io
+# bowtiedstack.github.io
 
 ## Dependencies
 
